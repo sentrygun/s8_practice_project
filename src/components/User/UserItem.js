@@ -1,5 +1,7 @@
 import React from "react";
 
+//creates user items to populate the UserList
+
 const UserItem = (props) => {
   // <p> tag may require different formatting
   return (

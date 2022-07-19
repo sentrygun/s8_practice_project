@@ -1,0 +1,9 @@
+Form to submit a user, containing the information Username and Age (Years)
+    -Button for Add User to submit this data
+        -Form resets after input
+    -Error prompt on invalid input (empty values)
+        -Error prompt has Okay button, disappears if either button or background is clicked
+        -Age must be integer >0, display unique error if invalid
+        
+
+List to display all entered users as Username (AGE years old)
