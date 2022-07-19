@@ -1,24 +1,25 @@
 import React from "react";
-
-import UserItem from "./UserItem";
+import Card from "../UI/Card";
+import classes from './UserList.module.css';
 
 // list comprised of user data, formatted as a series of UserItems
 const UserList = (props) => {
-  // fallback for when no items are in list
-  if (props.item.length === 0) {
-    return <h2>No users registered.</h2>;
-  }
 
   return (
+    <Card className={classes.users}>
     <ul>
-      {props.items.map((user) => (
-        <UserItem
-          key={user.id}
-          username={user.username}
-          age={user.age}
-        />
+      {props.users.map((user) => (
+        <li key={user.id}>
+          {user.username} ({user.age} years old)
+        </li>
+        // <UserItem
+        //   key={user.id}
+        //   username={user.username}
+        //   age={user.age}
+        // />
       ))}
     </ul>
+    </Card>
   );
 };
 
